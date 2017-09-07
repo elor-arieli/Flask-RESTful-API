@@ -4,6 +4,6 @@ from flask import render_template,make_response
 class render_index(Resource):
     def get(self):
         resp = make_response(render_template('index.html'))
-        resp.mimetype = 'text/plain'
+        resp.mimetype = 'html'
         return resp
         # return render_template('index.html')
