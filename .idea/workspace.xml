@@ -347,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504800287182</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixing rendering for html index page 2nd time">
+      <created>1504800488944</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1504800488944</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -384,7 +391,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added rendering for html index page" />
     <MESSAGE value="fixing rendering for html index page" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing rendering for html index page" />
+    <MESSAGE value="fixing rendering for html index page 2nd time" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing rendering for html index page 2nd time" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

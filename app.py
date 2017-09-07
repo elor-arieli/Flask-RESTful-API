@@ -25,7 +25,7 @@ api.add_resource(Store, '/store/<string:name>')
 api.add_resource(StoreList, '/stores')
 
 @app.route("/")
-def index(self):
+def index():
     return render_template('index.html')
     # resp.mimetype = 'html'
     # return resp
