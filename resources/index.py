@@ -3,4 +3,7 @@ from flask import render_template
 
 class render_index(Resource):
     def get(self):
-        return render_template('index.html')
+        resp = make_response(render_template('index.html'))
+        resp.mimetype = 'text/plain'
+        return resp
+        # return render_template('index.html')
