@@ -13,10 +13,6 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.secret_key = 'buzi'
 api = Api(app)
 
-@app.before_first_request
-def create_table():
-    db.create_all()
-
 # JWT creates a new endpoint - '/auth', when we call it we send a username and password.
 jwt = JWT(app,authentication_handler=authenticate,identity_handler=identity)
 
@@ -31,4 +27,5 @@ api.add_resource(StoreList, '/stores')
 if __name__ == '__main__':
     from db import db
     db.init_app(app)
+    db.create_all()
     app.run(port=5000, debug=True)
