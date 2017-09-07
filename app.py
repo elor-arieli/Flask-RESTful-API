@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask,render_template
 from flask_jwt import JWT
 from flask_restful import Api
 from resources.items import Item, ItemList
@@ -23,7 +23,12 @@ api.add_resource(ItemList, '/items')
 api.add_resource(UserRegister, '/register')
 api.add_resource(Store, '/store/<string:name>')
 api.add_resource(StoreList, '/stores')
-api.add_resource(render_index, '/')
+
+@app.route("/")
+def index(self):
+    return render_template('index.html')
+    # resp.mimetype = 'html'
+    # return resp
 
 if __name__ == '__main__':
     from db import db
