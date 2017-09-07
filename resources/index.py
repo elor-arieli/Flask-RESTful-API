@@ -1,5 +1,5 @@
 from flask_restful import reqparse,Resource
-from flask import render_template
+from flask import render_template,make_response
 
 class render_index(Resource):
     def get(self):
